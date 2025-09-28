@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: alx_project_nexus
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn alx_project_nexus.wsgi:application
